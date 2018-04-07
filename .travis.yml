@@ -16,10 +16,10 @@ script:
 deploy:
   provider: pypi
   user: davidlday
-  python: '3.6'
   password:
     secure: 3/zLhV44lkbEuyT14Y4zFd65ywUwKMWeGqr5Yi8DTzYKYTlCTf/W1Qhm2/WfaYEiFQPyyAbjrf9cAGtSj70lo0xdkjXTteJnY7jtchEh7kcawJDdmuMxa9x2QhhJ2C4p5rl6ec3iBZwxGU6yox4woG9aSAC7D6x/KDPw4qSdb1aXq50WT+ePgBYMkenKdLNX5O/9+MD5nUI7tCbcatKyP2erWK86RbiVO7iOFAUG/g8fJ3OIp2Y+XFqDzLT4AlQBalLI3CQJAKjiVfUEK7SH60sHTkFtFp9MQBnvVWHcElsF4wW7VN9rbgqV0vbPG0wWwgaA04Sea1QOq5JLV2TJ3k1V0dRQQcRNuF+cqXw3bsBitqVnEUuZt+iphi+xeFXEkrY3rZXqcftlxZeF0u4966s3FpvkAK6zjR6zxtH6S2af8at3esoFOZ59j2Rt4+cgrKYfjQnzCsIDcP6+b9NVkLMcNyzy5/syhn3+TjhPcDs8G38IAfguAfIYgH/uZSbO/6fHCTI49mTpA6fFpIeauGTiiqyOJmwulQ/rQncOpmsDlbyLVMIef+AS8Stt2Om0HSSljdMfx+VX2vzwZLbIIOcf8mnPD3yP04FEI9KUUNN5OzQBNh2GaCJfhTcslmaMEN196KWyAaZx0paQzq0IylB6RqVeLY57a1S/1VLzxAk=
   distributions: sdist bdist_wheel
   on:
+    python: '3.6'
     tags: true
 
