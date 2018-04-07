@@ -13,7 +13,7 @@ narrative
     :target: https://www.codacy.com/app/ProseGrinder/python-narrative?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=prosegrinder/python-narrative&amp;utm_campaign=Badge_Grade
     :alt: Latest Codacy Coverage Report
 
-A Python small package for splitting text into dialogue and narrative.
+A small Python package for splitting text into dialogue and narrative.
 
 Installation
 ------------

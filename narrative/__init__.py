@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-"""narrative - A Python small package for splitting text into dialogue and narrative."""
+"""narrative - A small Python package for splitting text into dialogue and narrative."""
 
 import re
 

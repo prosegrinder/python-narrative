@@ -20,7 +20,7 @@ setup(
     author="David L. Day",
     author_email="dday376@gmail.com",
 
-    description="A Python small package for splitting text into dialogue and narrative.",
+    description="A small Python package for splitting text into dialogue and narrative.",
     long_description=LONG_DESCRIPTION,
 
     packages=[
