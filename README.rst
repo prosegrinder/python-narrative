@@ -9,7 +9,7 @@ narrative
     :target: https://travis-ci.org/prosegrinder/python-narrative
     :alt: Latest Travis CI build status
 
-.. image:: https://api.codacy.com/project/badge/Grade/df0afcc70ffc4a86a8777588567820c0
+.. image:: https://api.codacy.com/project/badge/Grade/199d8dcecc4345249c704325bec9cf7c
     :target: https://www.codacy.com/app/ProseGrinder/python-narrative?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=prosegrinder/python-narrative&amp;utm_campaign=Badge_Grade
     :alt: Latest Codacy Coverage Report
 
