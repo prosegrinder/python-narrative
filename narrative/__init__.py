@@ -16,12 +16,12 @@ __version__ = pkg_resources.resource_string(
 # http://www.rubular.com/r/mP6IRzteSm
 # http://pythex.org/
 # http://www.metaltoad.com/blog/regex-quoted-string-escapable-quotes
-DIALOGUE_RE = r'[\"“]((?:.(?![\"“]))*.?)[\"”\\n]'
+# DIALOGUE_RE = r'[\"“]((?:.(?![\"“]))*.?)[\"”\\n]'
+DIALOGUE_RE = re.compile(r'[\"“](?:.(?![\"“]))*.?[\"”\\n]', re.MULTILINE)
 
 
 def get_dialogue(text, dialogue_regex=DIALOGUE_RE):
-    matches = re.finditer(dialogue_regex, text)
-    dialogue = [match.group() for matchNum, match in enumerate(matches)]
+    dialogue = dialogue_regex.findall(text)
     return dialogue
 
 
@@ -30,7 +30,7 @@ def get_narrative(text, dialogue_regex=DIALOGUE_RE):
     return narrative
 
 
-def parse(text, dialogue_regex=DIALOGUE_RE):
+def split(text, dialogue_regex=DIALOGUE_RE):
     dialogue = get_dialogue(text, dialogue_regex)
     narrative = get_narrative(text, dialogue_regex)
     return {"dialogue": dialogue, "narrative": narrative}
