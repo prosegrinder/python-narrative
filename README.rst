@@ -49,7 +49,7 @@ There are two other helper functions as well.
     >>> narrative.get_dialogue(text)
     ['"Hello,"', '"How are you today?"']
 
-``get_narrative()`` returns a dict containing all first, second, and third person pov words::
+``get_narrative()`` returns only the narrative components::
 
     >>> narrative.get_dialogue(text)
     ['', ' he said. ', '']
