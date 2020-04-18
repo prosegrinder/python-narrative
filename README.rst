@@ -5,9 +5,9 @@ narrative
     :target: https://pypi.python.org/pypi/narrative
     :alt: Latest PyPI version
 
-.. image:: https://travis-ci.org/prosegrinder/python-narrative.svg?branch=master
-    :target: https://travis-ci.org/prosegrinder/python-narrative
-    :alt: Latest Travis CI build status
+.. image:: https://github.com/prosegrinder/python-narrative/workflows/Python%20CI/badge.svg?branch=master
+    :target: https://github.com/prosegrinder/python-narrative/actions?query=workflow%3A%22Python+CI%22+branch%3Amaster
+    :alt: GitHub Workflow Status
 
 .. image:: https://api.codacy.com/project/badge/Grade/199d8dcecc4345249c704325bec9cf7c
     :target: https://www.codacy.com/app/ProseGrinder/python-narrative?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=prosegrinder/python-narrative&amp;utm_campaign=Badge_Grade
