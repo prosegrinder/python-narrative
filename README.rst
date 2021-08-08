@@ -5,8 +5,8 @@ narrative
     :target: https://pypi.python.org/pypi/narrative
     :alt: Latest PyPI version
 
-.. image:: https://github.com/prosegrinder/python-narrative/workflows/Python%20CI/badge.svg?branch=master
-    :target: https://github.com/prosegrinder/python-narrative/actions?query=workflow%3A%22Python+CI%22+branch%3Amaster
+.. image:: https://github.com/prosegrinder/python-narrative/workflows/Python%20CI/badge.svg?branch=main
+    :target: https://github.com/prosegrinder/python-narrative/actions?query=workflow%3A%22Python+CI%22+branch%3Amain
     :alt: GitHub Workflow Status
 
 .. image:: https://api.codacy.com/project/badge/Grade/199d8dcecc4345249c704325bec9cf7c
