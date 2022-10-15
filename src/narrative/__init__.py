@@ -23,6 +23,8 @@ __version__ = (
 # DIALOGUE_RE = r'[\"“]((?:.(?![\"“]))*.?)[\"”\\n]'
 DIALOGUE_RE = re.compile(r"[\"“](?:.(?![\"“]))*.?[\"”\\n]", re.MULTILINE)
 
+BRITISH_DIALOGUE_RE = re.compile(r"['‘](?:.(?!['‘]))*.?['’\n]", re.MULTILINE)
+
 
 def get_dialogue(text, dialogue_regex=DIALOGUE_RE):
     """Get the dialogue fragments from a piece of text
