@@ -7,3 +7,4 @@ on:
 jobs:
   python-publish:
     uses: prosegrinder/.github/.github/workflows/python-publish.yaml@main
+    secrets: inherit

@@ -8,3 +8,4 @@ on:
 jobs:
   python-test-publish:
     uses: prosegrinder/.github/.github/workflows/python-test-publish.yaml@main
+    secrets: inherit
