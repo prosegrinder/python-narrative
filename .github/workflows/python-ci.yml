@@ -8,7 +8,7 @@ on:
 
 jobs:
   lint:
-    uses: prosgrinder/.github/.github/workflows/python-lint.yaml@main
+    uses: prosgrinder/prosegrinder/.github/workflows/python-lint.yaml@main
     # runs-on: ubuntu-latest
     # steps:
     #   - name: Check Out
