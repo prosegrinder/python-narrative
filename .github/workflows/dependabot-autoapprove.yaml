@@ -1,0 +1,9 @@
+name: Dependabot auto-approve
+on: pull_request
+
+permissions:
+  pull-requests: write
+
+jobs:
+  dependabot:
+    uses: prosegrinder/.github/.github/workflows/dependabot-autoapprove.yaml@main
