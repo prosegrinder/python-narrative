@@ -4,7 +4,7 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry]
 name = "narrative"
-version = "1.1.0"
+version = "1.1.1"
 description = "A small Python package for splitting text into dialogue and narrative."
 authors = ["David L. Day <david@davidlday.com>"]
 license = "GPLv3"
