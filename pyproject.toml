@@ -9,6 +9,19 @@ description = "A small Python package for splitting text into dialogue and narra
 authors = ["David L. Day <david@davidlday.com>"]
 license = "GPLv3"
 readme = "README.md"
+homepage = "https://github.com/prosegrinder/python-narrative"
+repository = "https://github.com/prosegrinder/python-narrative"
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Text Processing :: Linguistic",
+]
 
 [tool.poetry.dependencies]
 python = "^3.7.2"
