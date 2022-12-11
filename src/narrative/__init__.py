@@ -6,12 +6,14 @@ A small Python package for splitting text into dialogue and narrative.
 """
 
 import re
+import sys
 
-import pkg_resources
+if sys.version_info >= (3, 9):
+    from importlib import metadata
+else:
+    import importlib_metadata as metadata
 
-__version__ = (
-    pkg_resources.resource_string("narrative", "VERSION").decode("utf-8").strip()
-)
+__version__ = metadata.version(__name__)
 
 # NOTE: Smart quotes are error prone. I recommend converting
 # them to regular quotes first.

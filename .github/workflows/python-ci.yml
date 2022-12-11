@@ -1,21 +1,12 @@
-name: Python CI
+name: Python Poetry CI
 
 on:
-  push:
-    branches:
-      - main
   pull_request:
-    branches:
-      - main
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
-  lint:
-    uses: prosegrinder/.github/.github/workflows/python-lint.yaml@main
-
-  check-build:
-    uses: prosegrinder/.github/.github/workflows/python-check-build.yaml@main
-    needs: lint
-
-  test:
-    uses: prosegrinder/.github/.github/workflows/python-test.yaml@main
-    needs: check-build
+  python-poetry-ci:
+    uses: prosegrinder/.github/.github/workflows/python-poetry-ci.yaml@main

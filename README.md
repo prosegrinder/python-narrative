@@ -13,18 +13,6 @@ A small Python package for splitting text into dialogue and narrative.
 pip install narrative
 ```
 
-You can also install it from source:
-
-```bash
-$ git clone https://github.com/prosegrinder/python-narrative.git
-Cloning into 'python-narrative'...
-...
-
-$ cd python-narrative
-$ python setup.py install
-...
-```
-
 ## Usage
 
 `narrative` splits a piece of prose into narrative and dialogue components. The
