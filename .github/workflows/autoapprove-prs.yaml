@@ -10,4 +10,4 @@ jobs:
     with:
       PR_URL: ${{github.event.pull_request.html_url}}
     secrets:
-      GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+      APPROVAL_TOKEN: ${{secrets.GITHUB_TOKEN}}
