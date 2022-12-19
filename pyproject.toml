@@ -1,5 +1,5 @@
 [tool.commitizen]
-version = "1.1.1"
+version = "1.1.2"
 tag_format = "v$version"
 update_changelog_on_bump = true
 changelog_incremental = true
@@ -14,7 +14,7 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry]
 name = "narrative"
-version = "1.1.1"
+version = "1.1.2"
 description = "A small Python package for splitting text into dialogue and narrative."
 authors = ["David L. Day <david@davidlday.com>"]
 license = "GPLv3"
