@@ -5,6 +5,10 @@ updates:
     schedule:
       interval: monthly
       timezone: America/New_York
+    commit-message:
+      prefix: "patch"
+      prefix-development: "build"
+      include: "scope"
     open-pull-requests-limit: 10
     reviewers:
       - davidlday
@@ -13,6 +17,9 @@ updates:
     schedule:
       interval: monthly
       timezone: America/New_York
+    commit-message:
+      prefix: "ci"
+      include: "scope"
     open-pull-requests-limit: 10
     reviewers:
       - davidlday
