@@ -6,7 +6,7 @@ updates:
       interval: monthly
       timezone: America/New_York
     commit-message:
-      prefix: "patch"
+      prefix: "fix"
       prefix-development: "build"
       include: "scope"
     open-pull-requests-limit: 10
