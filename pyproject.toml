@@ -1,26 +1,33 @@
-[tool.commitizen]
-version = "1.1.2"
-tag_format = "v$version"
-update_changelog_on_bump = true
-changelog_incremental = true
-bump_message = "bump: $current_version → $new_version"
-version_files = [
-  "pyproject.toml:version",
+[project]
+name = "narrative"
+dynamic = ["version","classifiers"]
+description = "A small Python package for splitting text into dialogue and narrative."
+license = { text = "GPLv3" }
+readme = "README.md"
+requires-python = ">=3.9,<4.0"
+authors = [
+    { name = "David L. Day", email = "david@davidlday.com" }
 ]
+dependencies = ["importlib-metadata>=5.1,<7.0"]
+
+[project.urls]
+homepage = "https://github.com/prosegrinder/python-narrative"
+repository = "https://github.com/prosegrinder/python-narrative"
+"Bug Tracker" = "https://github.com/prosegrinder/python-narrative/issues"
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
+[tool.commitizen]
+tag_format = "v$version"
+update_changelog_on_bump = true
+changelog_incremental = true
+bump_message = "bump: $current_version → $new_version"
+version_provider = "poetry"
+
 [tool.poetry]
-name = "narrative"
 version = "1.1.2"
-description = "A small Python package for splitting text into dialogue and narrative."
-authors = ["David L. Day <david@davidlday.com>"]
-license = "GPLv3"
-readme = "README.md"
-homepage = "https://github.com/prosegrinder/python-narrative"
-repository = "https://github.com/prosegrinder/python-narrative"
 classifiers = [
     "Development Status :: 5 - Production/Stable",
     "Intended Audience :: Developers",
@@ -32,10 +39,6 @@ classifiers = [
     "Topic :: Software Development :: Libraries :: Python Modules",
     "Topic :: Text Processing :: Linguistic",
 ]
-
-[tool.poetry.dependencies]
-python = "^3.7.2"
-importlib-metadata = ">=5.1,<7.0"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^7.2.0"
