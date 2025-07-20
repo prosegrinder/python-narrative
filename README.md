@@ -1,7 +1,7 @@
 # narrative
 
 [![Latest PyPI version](https://img.shields.io/pypi/v/narrative.svg)](https://pypi.python.org/pypi/narrative)
-[![GitHub Workflow Status](https://github.com/prosegrinder/python-narrative/workflows/Python%20CI/badge.svg?branch=main)](https://github.com/prosegrinder/python-narrative/actions?query=workflow%3A%22Python+CI%22+branch%3Amain)
+[![Python Poetry CI](https://github.com/prosegrinder/python-narrative/actions/workflows/python-ci.yml/badge.svg)](https://github.com/prosegrinder/python-narrative/actions/workflows/python-ci.yml)
 
 A small Python package for splitting text into dialogue and narrative.
 
