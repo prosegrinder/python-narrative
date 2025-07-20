@@ -20,9 +20,13 @@ __version__ = metadata.version(__name__)
 # http://pythex.org/
 # http://www.metaltoad.com/blog/regex-quoted-string-escapable-quotes
 # DIALOGUE_RE = r'[\"“]((?:.(?![\"“]))*.?)[\"”\\n]'
-DIALOGUE_RE: Final[re.Pattern] = re.compile(r"[\"“](?:.(?![\"“]))*.?[\"”\\n]", re.MULTILINE)
+DIALOGUE_RE: Final[re.Pattern] = re.compile(
+    r"[\"“](?:.(?![\"“]))*.?[\"”\\n]", re.MULTILINE
+)
 
-BRITISH_DIALOGUE_RE: Final[re.Pattern] = re.compile(r"['‘](?:.(?!['‘]))*.?['’\n]", re.MULTILINE)
+BRITISH_DIALOGUE_RE: Final[re.Pattern] = re.compile(
+    r"['‘](?:.(?!['‘]))*.?['’\n]", re.MULTILINE
+)
 
 
 def get_dialogue(text: str, dialogue_regex: re.Pattern = DIALOGUE_RE) -> list[str]:
