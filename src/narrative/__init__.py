@@ -8,6 +8,7 @@ A small Python package for splitting text into dialogue and narrative.
 import re
 
 from importlib import metadata
+from typing import Final
 
 __version__ = metadata.version(__name__)
 
@@ -19,18 +20,21 @@ __version__ = metadata.version(__name__)
 # http://pythex.org/
 # http://www.metaltoad.com/blog/regex-quoted-string-escapable-quotes
 # DIALOGUE_RE = r'[\"“]((?:.(?![\"“]))*.?)[\"”\\n]'
-DIALOGUE_RE = re.compile(r"[\"“](?:.(?![\"“]))*.?[\"”\\n]", re.MULTILINE)
+DIALOGUE_RE: Final[re.Pattern] = re.compile(r"[\"“](?:.(?![\"“]))*.?[\"”\\n]", re.MULTILINE)
 
-BRITISH_DIALOGUE_RE = re.compile(r"['‘](?:.(?!['‘]))*.?['’\n]", re.MULTILINE)
+BRITISH_DIALOGUE_RE: Final[re.Pattern] = re.compile(r"['‘](?:.(?!['‘]))*.?['’\n]", re.MULTILINE)
 
 
-def get_dialogue(text, dialogue_regex=DIALOGUE_RE):
+def get_dialogue(text: str, dialogue_regex: re.Pattern = DIALOGUE_RE) -> list[str]:
     """Get the dialogue fragments from a piece of text
 
     Parameters:
     ----------
     text : str
         a block of english language text
+    dialogue_regex : re.Pattern, optional
+        a regular expression to match dialogue fragments,
+        by default DIALOGUE_RE
 
     Returns:
     -------
@@ -41,13 +45,16 @@ def get_dialogue(text, dialogue_regex=DIALOGUE_RE):
     return dialogue
 
 
-def get_narrative(text, dialogue_regex=DIALOGUE_RE):
+def get_narrative(text: str, dialogue_regex: re.Pattern = DIALOGUE_RE) -> list[str]:
     """Get the narrative fragments from a piece of text
 
     Parameters:
     ----------
     text : str
         a block of english language text
+    dialogue_regex : re.Pattern, optional
+        a regular expression to match dialogue fragments,
+        by default DIALOGUE_RE
 
     Returns:
     -------
@@ -58,13 +65,16 @@ def get_narrative(text, dialogue_regex=DIALOGUE_RE):
     return narrative
 
 
-def split(text, dialogue_regex=DIALOGUE_RE):
+def split(text: str, dialogue_regex: re.Pattern = DIALOGUE_RE) -> dict[str, list[str]]:
     """Split a piece of text into dialogue and narrative
 
     Parameters:
     ----------
     text : str
         a block of english language text
+    dialogue_regex : re.Pattern, optional
+        a regular expression to match dialogue fragments,
+        by default DIALOGUE_RE
 
     Returns:
     -------
