@@ -1,3 +1,9 @@
+## v1.2.0 (2025-07-21)
+
+### Feat
+
+- add type hints and type marker (#47)
+
 ## v1.1.2 (2022-12-19)
 
 ### Fix
