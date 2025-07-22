@@ -1,3 +1,9 @@
+## v1.2.1 (2025-07-22)
+
+### Fix
+
+- move py.typed to narrative folder (#48)
+
 ## v1.2.0 (2025-07-21)
 
 ### Feat
