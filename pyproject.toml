@@ -43,7 +43,7 @@ classifiers = [
 [tool.poetry.group.dev.dependencies]
 mypy = "^1.17.1"
 bandit = "^1.8.6"
-pylint = "^3.3.7"
+pylint = "^3.3.9"
 pytest = "^8.4.1"
 black = "^25.9.0"
 
